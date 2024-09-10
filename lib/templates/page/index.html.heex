@@ -1,4 +1,4 @@
-<section class="section-jpeg-xl-hero gradient-bottom">
+<section class="section-hero">
   <div class="w-layout-blockcontainer container-grouped w-container">
     <div class="header-hero">
       <h1 class="text-xxl-regular centered teal">JPEG XL</h1>
@@ -15,63 +15,49 @@
     </div>
   </div>
   <div class="size-large-3rem-48px"></div>
-  <div class="container-content-fullspan">
-    <div class="div-contain-items-full_center">
-      <div class="div-container-full_span-horizontal centered">
-        <img
-          src={~p"/images/Ripple-Line2x-50.0s-2560px-371px.svg"}
-          loading="lazy"
-          alt=""
-          height="Auto"
-          class="image-wave-2560"
-        /><img
-          src={~p"/images/Ripple-Line2x-50.0s-1440px-300px.svg"}
-          loading="lazy"
-          alt=""
-          class="image-9"
-        />
-      </div>
-      <div class="div-container-full_span-horizontal centered">
-        <img
-          src={~p"/images/Icon-JPEGXL-Square-Full-Colour.svg"}
-          loading="lazy"
-          width="120"
-          height="120"
-          alt=""
-          class="logo-home-large"
-        />
-      </div>
+  <div class="container-wave-animated tall">
+    <div class="wave">
+      <img src={~p"/images/Ripple-Line2x-50.0s-2560px-371px.svg"} loading="lazy" />
     </div>
-    <div class="wrapper-text centered width-rem">
-      <p class="text-xl-light-2 is-centered">
-        Unmatched in quality-per-byte, JPEG&nbsp;XL delivers best-of-breed image
-        compression from web quality through lossless.
-      </p>
+    <div class="floating">
+      <img
+        src={~p"/images/Icon-JPEGXL-Square-Full-Colour.svg"}
+        loading="lazy"
+        alt="JPEG XL Logo"
+        class="logo-home-large"
+      />
     </div>
+  </div>
+  <div class="wrapper-text centered width-rem">
+    <p class="text-xl-light-2 is-centered">
+      Unmatched in quality-per-byte, JPEG&nbsp;XL delivers best-of-breed image
+      compression from web quality through lossless.
+    </p>
   </div>
 </section>
 <section class="section-jpeg-comparison">
+  <div id="jpegvsjxl_data" class="json-data" data-json={jpegvsjxl_data()}></div>
   <div class="size-xxhuge-12rem-192px"></div>
   <div class="w-layout-blockcontainer container-grouped padding-global-sides w-container">
     <div class="container-grouped">
       <div class="header-subhead">
         <h2 class="display-l-bold">JPEG&nbsp;XL is…</h2>
-        <div data-figma-id="73:4012" class="size-small-1rem-16px"></div>
+        <div class="size-small-1rem-16px"></div>
         <h3 class="text-xxl-regular centered teal">Up to 55% Smaller Than JPEG</h3>
-        <div data-figma-id="73:4012" class="size-small-1rem-16px"></div>
+        <div class="size-small-1rem-16px"></div>
       </div>
       <div class="container-2col-span-text">
         <div class="container-column-1 left">
           <div class="div-container-rounded_text_box">
             <h3 class="label-menu-text">JPEG</h3>
           </div>
-          <div data-figma-id="73:4012" class="size-small-1rem-16px"></div>
+          <div class="size-small-1rem-16px"></div>
         </div>
         <div class="container-column-1 right">
           <div class="div-container-rounded_text_box">
             <h3 class="label-menu-text">JPEG XL</h3>
           </div>
-          <div data-figma-id="73:4012" class="size-small-1rem-16px"></div>
+          <div class="size-small-1rem-16px"></div>
         </div>
       </div>
       <div class="container-code">
@@ -89,7 +75,7 @@
                     />
                     <picture id="JPEGCompare_JXLImage" class="image1-after slider-image">
                       <source type="image/jxl" srcset="" />
-                      <img src="" alt="JPEG XL" />
+                      <img src="" />
                     </picture>
                   </div>
                   <input
@@ -170,7 +156,7 @@
                     </svg>
                     <div class="tooltip-content">
                       <div class="tooltip-triangle"></div>
-                      <h4 id="image_Title" class="heading-desktop-h6">Image Title</h4>
+                      <h4 id="image_title" class="heading-desktop-h6">Image Title</h4>
                       <div class="tooltip-columns">
                         <div class="JPEG-tooltip-content">
                           <h4 class="text-m-regular">JPEG Info:</h4>
@@ -623,19 +609,19 @@
                   <button
                     data-tooltip="Vary Size, Hold Quality Constant."
                     class="tabs__button"
-                    data-for-tab="jpeg-size"
+                    id="btn_jpeg_jxl_size"
                   >
                     COMPARE SIZE
                   </button>
                   <button
                     data-tooltip="Vary Quality, Hold Size Contant."
-                    class="tabs__button tabs__button-active"
-                    data-for-tab="jpeg-quality"
+                    class="tabs__button"
+                    id="btn_jpeg_jxl_quality"
                   >
                     COMPARE QUALITY
                   </button>
                 </div>
-                <div class="tabs__content" data-tab="jpeg-size">
+                <div class="tabs__content" id="tab_jpeg_jxl_size">
                   <div class="label-left">
                     <h4 class="text-all-caps-micro-medium">Size:</h4>
                     <div class="label-icon-left">
@@ -650,11 +636,11 @@
                     <input
                       type="range"
                       min="0"
-                      max="75"
-                      value="50"
-                      step="25"
+                      max="3"
+                      value="2"
+                      step="1"
                       class="slider-size"
-                      id="mySizeRange"
+                      id="range_jpeg_jxl_size"
                     />
                     <div class="size-range-labels">
                       <p class="size-label text-all-caps-micro-medium-white ml">Med-Low</p>
@@ -674,7 +660,7 @@
                     </h6>
                   </div>
                 </div>
-                <div class="tabs__content tabs__content-active" data-tab="jpeg-quality">
+                <div class="tabs__content" id="tab_jpeg_jxl_quality">
                   <div class="label-left">
                     <h4 class="text-all-caps-micro-medium">SSIMU2 SCORE:</h4>
                     <div class="label-icon-left">
@@ -688,11 +674,11 @@
                     <input
                       type="range"
                       min="0"
-                      max="75"
-                      value="25"
-                      step="25"
+                      max="3"
+                      value="2"
+                      step="1"
                       class="slider"
-                      id="myQualityRange"
+                      id="range_jpeg_jxl_quality"
                     />
                     <div class="range-labels">
                       <p class="quality-label text-all-caps-micro-medium-white sm">Small</p>

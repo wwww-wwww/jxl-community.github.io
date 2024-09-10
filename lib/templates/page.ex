@@ -7,4 +7,12 @@ defmodule JpegxlWeb.PageHTML do
   use JpegxlWeb, :html
 
   embed_templates "page/*"
+
+  def jpegvsjxl_data() do
+    %{
+      "quality" => Jason.decode!(File.read!("data/JPEG_CompareSizeSameQuality.json")),
+      "size" => Jason.decode!(File.read!("data/JPEG_CompareQualitySameSize.json"))
+    }
+    |> Jason.encode!()
+  end
 end

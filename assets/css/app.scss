@@ -4,6 +4,8 @@
 @import "footer.scss";
 @import "hero.scss";
 
+@import "index.scss";
+
 .material-icons {
   font-family: "Material Icons";
   font-weight: normal;
@@ -48,4 +50,48 @@ main {
 
 label.material-icons {
   margin-bottom: 0;
+}
+
+.image-logo-software img {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 12em;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.wrapper-logo-text {
+  a {
+    width: auto;
+    max-width: none;
+    height: 5rem;
+    max-height: none;
+  }
+
+  > div {
+    color: var(--text--color--text-black);
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+}
+
+.container-text-shaded {
+  > p {
+    margin: 0;
+  }
+
+  a {
+    color: var(--text--color--text-black);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
 }

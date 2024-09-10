@@ -1,19 +1,23 @@
-<section class="section-hero hero-fullspan-graphic gradient-bottom">
+<section class="section-hero">
   <div class="container-content-vflex padding-sides">
     <div class="container-content-vflex centered">
       <div class="wrapper-text color-gradient">
         <h1 class="display-xl-bold fill-gradient">Supported Software</h1>
       </div>
       <div class="wrapper-text width-small">
-        <h2 class="text-l-medium large">Standardized in 2022, JPEG&nbsp;XL is quickly gaining momentum. Major operating systems, web browsers, and image editing software are increasingly adopting support for this efficient compression technology.</h2>
+        <h2 class="text-l-medium large">
+          Standardized in 2022, JPEG&nbsp;XL is quickly gaining momentum. Major operating systems, web browsers, and image editing software are increasingly adopting support for this efficient compression technology.
+        </h2>
       </div>
     </div>
   </div>
   <div class="container-wave-animated">
-    <div class="wrapper-content-wave centered align-middle height-cropped-width-full"><img src="../images/Ripple-Line2x-50.0s-2560px-371px.svg" loading="lazy" alt="" class="image-wave-2560"><img src="../images/Ripple-Line2x-50.0s-1440px-300px.svg" loading="lazy" alt="" class="image-wave-1440"></div>
+    <div class="wave">
+      <img src={~p"/images/Ripple-Line2x-50.0s-2560px-371px.svg"} loading="lazy" />
+    </div>
   </div>
 </section>
-<div class="section-content-wrapper height-100 centered padding-top_bottom">
+<div class="section-content-wrapper height-100 centered padding-top_bottom image-logo-software">
   <div class="container-content-vflex width-page-max centered">
     <div class="container-content-vflex width-page-max">
       <div class="wrapper-content centered">
@@ -21,35 +25,58 @@
           <div class="text-xl-regular color-black">Operating Systems</div>
           <div class="container-logos">
             <div class="wrapper-logo-text">
-              <a href="https://www.apple.com" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_apple.svg" loading="lazy" width="120" height="142.4636688232422" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Apple</div>
+              <a href="https://www.apple.com">
+                <img src={~p"/images/sw_apple.svg"} loading="lazy" alt="Apple" />
+              </a>
+              <div>Apple</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://en.wikipedia.org/wiki/MacOS_Sonoma" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_macOS.svg" loading="lazy" width="120" height="123.4285659790039" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">macOS</div>
+              <a href="https://en.wikipedia.org/wiki/MacOS_Sonoma">
+                <img src={~p"/images/sw_macOS.svg"} loading="lazy" alt="macOS" />
+              </a>
+              <div>macOS</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://en.wikipedia.org/wiki/IOS_17" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_iOS17.png" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">iOS 17</div>
+              <a href="https://en.wikipedia.org/wiki/IOS_17">
+                <img src={~p"/images/sw_iOS17.png"} loading="lazy" alt="iOS 17" />
+              </a>
+              <div>iOS 17</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://www.openmandriva.org" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_openmandriva.svg" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">OpenMandriva Lx</div>
+              <a href="https://www.openmandriva.org">
+                <img src={~p"/images/sw_openmandriva.svg"} loading="lazy" alt="OpenMandriva" />
+              </a>
+              <div>
+                OpenMandriva Lx
+              </div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://kaosx.us" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_kaos.svg" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">KaOS</div>
+              <a href="https://kaosx.us">
+                <img src={~p"/images/sw_kaos.svg"} loading="lazy" alt="kaOS" />
+              </a>
+              <div>KaOS</div>
             </div>
           </div>
           <div class="wrapper-text centered">
             <div class="container-text-shaded centered">
               <div class="text-regular-semibold color-black">And more</div>
-              <div class="text-small-regular centered color-black">
-                <a href="https://github.com/novomesk/qt-jpegxl-image-plugin" target="_blank" class="link-text-body-underline">Qt / KDE</a>: plugin available<a href="https://github.com/novomesk/qt-jpegxl-image-plugin"><br>‍</a>GDK-pixbuf: plugin available in libjxl repo<br>‍<a href="https://ubuntuhandbook.org/index.php/2021/04/gthumb-3-11-3-adds-jpeg-xl-support/" target="_blank" class="link-text-body-underline">gThumb<br>‍</a>
-                <a href="https://github.com/yllan/JXLook" target="_blank" class="link-text-body-underline">MacOS Viewer/QuickLook Plugin<br>‍</a>
-                <a href="https://github.com/mirillis/jpegxl-wic" target="_blank" class="link-text-body-underline">Windows Imaging Component<br>‍</a>
-                <a href="https://github.com/saschanaz/jxl-winthumb" target="_blank" class="link-text-body-underline">Windows Thumbnail Handler<br></a>
-                <a href="https://www.enlightenment.org/" target="_blank" class="link-text-body-underline">EFL</a> (supported since 1.27, no external plugin needed)
+              <div class="text-small-regular centered color-black list">
+                <span>
+                  <a href="https://github.com/novomesk/qt-jpegxl-image-plugin">Qt / KDE</a>
+                  : plugin
+                  <a href="https://github.com/novomesk/qt-jpegxl-image-plugin">available</a>
+                </span>
+                <span>GDK-pixbuf: plugin available in libjxl repo</span>
+                <a href="https://ubuntuhandbook.org/index.php/2021/04/gthumb-3-11-3-adds-jpeg-xl-support/">
+                  gThumb
+                </a>
+                <a href="https://github.com/yllan/JXLook">MacOS Viewer/QuickLook Plugin</a>
+                <a href="https://github.com/mirillis/jpegxl-wic">Windows Imaging Component</a>
+                <a href="https://github.com/saschanaz/jxl-winthumb">Windows Thumbnail Handler</a>
+                <span>
+                  <a href="https://www.enlightenment.org/">EFL</a>
+                  (supported since 1.27, no external plugin needed)
+                </span>
               </div>
             </div>
           </div>
@@ -59,32 +86,50 @@
           <div class="text-xl-regular color-black">Browser Support</div>
           <div class="container-logos">
             <div class="wrapper-logo-text">
-              <a href="https://www.apple.com/ca/safari/" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_safari.svg" loading="lazy" width="120" height="119.3434066772461" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Safari</div>
+              <a href="https://www.apple.com/ca/safari/">
+                <img src={~p"/images/sw_safari.svg"} loading="lazy" alt="Safari" />
+              </a>
+              <div>Safari</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://thorium.rocks" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_thorium.svg" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Thorium</div>
+              <a href="https://thorium.rocks">
+                <img src={~p"/images/sw_thorium.svg"} loading="lazy" alt="Thorium" />
+              </a>
+              <div>Thorium</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://www.waterfox.net" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_waterfox.svg" loading="lazy" width="139.61538696289062" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Waterfox</div>
+              <a href="https://www.waterfox.net">
+                <img src={~p"/images/sw_waterfox.svg"} loading="lazy" alt="Waterfox" />
+              </a>
+              <div>Waterfox</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://www.mozilla.org/en-CA/firefox/channel/desktop/" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_firefox_nightly.svg" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Firefox Nightly</div>
+              <a href="https://www.mozilla.org/en-CA/firefox/channel/desktop/">
+                <img
+                  src={~p"/images/sw_firefox_nightly.svg"}
+                  loading="lazy"
+                  alt="Firefox Nightly"
+                />
+              </a>
+              <div>Firefox Nightly</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://www.palemoon.org" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_palemoon.png" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Pale Moon</div>
+              <a href="https://www.palemoon.org">
+                <img src={~p"/images/sw_palemoon.png"} loading="lazy" alt="Palemoon" />
+              </a>
+              <div>Pale Moon</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://www.basilisk-browser.org" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/BasiliskLogo.png" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Basilisk</div>
+              <a href="https://www.basilisk-browser.org">
+                <img src={~p"/images/BasiliskLogo.png"} loading="lazy" alt="Basilisk" />
+              </a>
+              <div>Basilisk</div>
             </div>
           </div>
           <div class="container-text-shaded centered">
-            <p class="text-small-regular color-black centered">For all browsers and to track browsers progress see <a href="https://caniuse.com/jpegxl" target="_blank" class="link-text-body-underline">Can I Use</a>.</p>
+            <p class="text-small-regular color-black centered">
+              For all browsers and to track browsers progress see <a href="https://caniuse.com/jpegxl">Can I Use</a>.
+            </p>
           </div>
         </div>
         <div class="spacer-2rem"></div>
@@ -92,43 +137,83 @@
           <div class="text-xl-regular color-black">Image Editors</div>
           <div class="container-logos">
             <div class="wrapper-logo-text">
-              <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_photoshop.svg" loading="lazy" width="123.07691955566406" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Photoshop</div>
+              <a href="https://www.adobe.com/products/photoshop.html">
+                <img src={~p"/images/sw_photoshop.svg"} loading="lazy" alt="Photoshop" />
+              </a>
+              <div>Photoshop</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://lightroom.adobe.com" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_lightroom.svg" loading="lazy" width="123.0719985961914" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Lightroom</div>
+              <a href="https://lightroom.adobe.com">
+                <img src={~p"/images/sw_lightroom.svg"} loading="lazy" alt="Lightroom" />
+              </a>
+              <div>Lightroom</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://affinity.serif.com" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_affinity.svg" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Affinity</div>
+              <a href="https://affinity.serif.com">
+                <img src={~p"/images/sw_affinity.svg"} loading="lazy" alt="Affinity" />
+              </a>
+              <div>Affinity</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://www.gimp.org" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_gimp.svg" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Gimp</div>
+              <a href="https://www.gimp.org">
+                <img src={~p"/images/sw_gimp.svg"} loading="lazy" alt="Gimp" />
+              </a>
+              <div>Gimp</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://krita.org/en/" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/Krita-icon---2021.svg" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Krita</div>
+              <a href="https://krita.org/en/">
+                <img src={~p"/images/Krita-icon---2021.svg"} loading="lazy" alt="Krita" />
+              </a>
+              <div>Krita</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://www.darktable.org" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_darktable.svg" loading="lazy" width="120" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Darktable</div>
+              <a href="https://www.darktable.org">
+                <img src={~p"/images/sw_darktable.svg"} loading="lazy" alt="Darktable" />
+              </a>
+              <div>Darktable</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://helpx.adobe.com/ca/camera-raw/using/introduction-camera-raw.html" target="_blank" class="wrapper-logo-software-link horizontal w-inline-block"><img src="../images/sw_adobe_camera_raw.png" loading="lazy" width="145.6910400390625" height="56" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Camera Raw</div>
+              <a href="https://helpx.adobe.com/ca/camera-raw/using/introduction-camera-raw.html">
+                <img src={~p"/images/sw_adobe_camera_raw.png"} loading="lazy" alt="Camera Raw" />
+              </a>
+              <div>Camera Raw</div>
             </div>
           </div>
           <div class="container-text-shaded centered">
             <div class="text-regular-semibold color-black">And more</div>
             <div class="wrapper-text">
-              <div class="text-small-regular color-black centered">
-                <a href="https://www.lemkesoft.de/en/products/graphicconverter/" target="_blank" class="link-text-body-underline">Graphic Converter</a> (since 11.5)<br>‍<a href="https://github.com/JacobDev1/xl-converter" class="link-text-body-underline">XL Converter<br></a>
-                <a href="https://github.com/T8RIN/ImageToolbox" target="_blank" class="link-text-body-underline">Image Toolbox</a> (supported since 2.6.0)<br>
-                <a href="https://www.getpaint.net/index.html" target="_blank" class="link-text-body-underline">Paint.NET</a>; supported since 4.3.12 - requires a <a href="https://github.com/0xC0000054/pdn-jpegxl" target="_blank" class="link-text-body-underline">plugin</a> to be downloaded and installed.Photoshop: no plugin available yet, no official support yet<br>
-                <a href="https://apps.apple.com/app/jpeg-xl-toolbox/id6470681357" target="_blank" class="link-text-body-underline">JPEG XL Toolbox</a> by SUIKA LTD<br>
-                <a href="https://github.com/Beep6581/RawTherapee" target="_blank" class="link-text-body-underline">RawTherapee</a> (since 5.11); Currently only opening of JXL files is supported. <a href="https://github.com/Beep6581/RawTherapee/pull/7097" target="_blank" class="link-text-body-underline">Exporting is expected for the 6.0 release</a>
+              <div class="text-small-regular color-black centered list">
+                <span>
+                  <a href="https://www.lemkesoft.de/en/products/graphicconverter/">
+                    Graphic Converter
+                  </a>
+                  (since 11.5)
+                </span>
+                <span><a href="https://github.com/JacobDev1/xl-converter">XL Converter</a></span>
+                <span>
+                  <a href="https://github.com/T8RIN/ImageToolbox">Image Toolbox</a>
+                  (supported since 2.6.0)
+                </span>
+                <span>
+                  <a href="https://www.getpaint.net/index.html">Paint.NET</a>
+                  ; supported since 4.3.12 - requires a
+                  <a href="https://github.com/0xC0000054/pdn-jpegxl">plugin</a>
+                  to be downloaded and installed.
+                </span>
+                <span>Photoshop: no plugin available yet, no official support yet</span>
+                <span>
+                  <a href="https://apps.apple.com/app/jpeg-xl-toolbox/id6470681357">
+                    JPEG XL Toolbox
+                  </a>
+                  by SUIKA LTD
+                </span>
+                <span>
+                  <a href="https://github.com/Beep6581/RawTherapee">RawTherapee</a>
+                  (since 5.11); Currently only opening of JXL files is supported.
+                  <a href="https://github.com/Beep6581/RawTherapee/pull/7097">
+                    Exporting is expected for the 6.0 release
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -138,21 +223,29 @@
           <div class="text-xl-regular color-black">Image Libraries</div>
           <div class="container-logos">
             <div class="wrapper-logo-text">
-              <a href="https://gdal.org/en/latest/drivers/raster/jpegxl.html" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/sw_gdal.svg" loading="lazy" width="108.50286865234375" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">GDAL</div>
+              <a href="https://gdal.org/en/latest/drivers/raster/jpegxl.html">
+                <img src={~p"/images/sw_gdal.svg"} loading="lazy" alt="GDL" />
+              </a>
+              <div>GDAL</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://imagemagick.org" target="_blank" class="wrapper-logo-software-link w-inline-block"><img src="../images/ImageMagic.svg" loading="lazy" width="115.94313049316406" height="120" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">Image Magick</div>
+              <a href="https://imagemagick.org">
+                <img src={~p"/images/ImageMagic.svg"} loading="lazy" alt="ImageMagick" />
+              </a>
+              <div>Image Magick</div>
             </div>
             <div class="wrapper-logo-text">
-              <a href="https://www.ffmpeg.org" target="_blank" class="wrapper-logo-software-link horizontal w-inline-block"><img src="../images/sw_ffmpeg.svg" loading="lazy" width="208.81605529785156" height="56" alt="" class="image-logo-software"></a>
-              <div class="text-regular-semibold wrap-none centered color-black">FF mpeg</div>
+              <a href="https://www.ffmpeg.org">
+                <img src={~p"/images/sw_ffmpeg.svg"} loading="lazy" alt="FFmpeg" />
+              </a>
+              <div>FFmpeg</div>
             </div>
           </div>
           <div class="container-text-shaded centered">
             <div class="text-regular-semibold color-black">And more</div>
-            <div class="text-small-regular color-black centered">‍<a href="https://libvips.github.io/libvips/" class="link-text-body-underline">libvips</a> (supported since 8.11)<br>‍<a href="https://github.com/alistair7/imlib2-jxl" class="link-text-body-underline">Imlib2</a>‍<br>‍<a href="http://www.graphicsmagick.org/NEWS.html#march-26-2022" class="link-text-body-underline">Graphics Magick</a> (supported since 1.3.38)<br>‍<a href="https://sail.software/" class="link-text-body-underline">SAIL</a> (supported since 0.9.0)<br>‍<a href="https://github.com/awxkee/jxl-coder" class="link-text-body-underline">JPEG XL Coder</a> (supports version from Android 5.0 - API Level 21)<br>‍<a href="https://github.com/SDWebImage/SDWebImageJPEGXLCoder" class="link-text-body-underline">SDWebImage JPEGXL Coder</a> (supported since 0.1.0)</div>
+            <div class="text-small-regular color-black centered">
+              ‍<a href="https://libvips.github.io/libvips/">libvips</a> (supported since 8.11)<br />‍<a href="https://github.com/alistair7/imlib2-jxl">Imlib2</a>‍<br />‍<a href="http://www.graphicsmagick.org/NEWS.html#march-26-2022">Graphics Magick</a> (supported since 1.3.38)<br />‍<a href="https://sail.software/">SAIL</a> (supported since 0.9.0)<br />‍<a href="https://github.com/awxkee/jxl-coder">JPEG XL Coder</a> (supports version from Android 5.0 - API Level 21)<br />‍<a href="https://github.com/SDWebImage/SDWebImageJPEGXLCoder">SDWebImage JPEGXL Coder</a> (supported since 0.1.0)
+            </div>
           </div>
         </div>
         <div class="spacer-2rem"></div>
@@ -162,41 +255,54 @@
             <div class="wrapper-text gap-2rem">
               <div class="text-regular-semibold color-black">Metadata Manipulation Libraries</div>
               <div class="text-small-regular color-black centered">
-                <a href="https://exiftool.org/" class="link-text-body-underline">ExifTool by Phil Harvey</a> (supported since 12.25)<br>‍<a href="https://exiv2.org/" class="link-text-body-underline">Exiv2</a> (supported since 0.27.4)<br>‍<a href="https://github.com/ashampoo/kim" class="link-text-body-underline">Ashampoo Kim</a> (supported since 0.10)
+                <a href="https://exiftool.org/">
+                  ExifTool by Phil Harvey
+                </a>
+                (supported since 12.25)<br />‍<a href="https://exiv2.org/">Exiv2</a> (supported since 0.27.4)<br />‍<a href="https://github.com/ashampoo/kim">Ashampoo Kim</a> (supported since 0.10)
               </div>
             </div>
           </div>
           <div class="container-text-shaded centered">
             <div class="wrapper-text gap-2rem">
               <div class="text-regular-semibold color-black">Online Tools</div>
-              <div class="text-small-regular centered color-black">
-                <a href="https://www.gumlet.com/blog/jpeg-xl/" class="link-text-body-underline">Gumlet<br>‍</a>
-                <a href="https://squoosh.app/" class="link-text-body-underline">Squoosh<br>‍</a>
-                <a href="https://cloudinary.com/blog/cloudinary_supports_jpeg_xl" class="link-text-body-underline">Cloudinary<br>‍</a>
-                <a href="https://mconverter.eu/" class="link-text-body-underline">MConverter<br>‍</a>
-                <a href="https://jpegxl.io/" class="link-text-body-underline">jpegxl.io<br>‍</a>
-                <a href="https://stefan-oltmann.de/exif-viewer" class="link-text-body-underline">EXIF Viewer</a>
+              <div class="text-small-regular centered color-black list">
+                <a href="https://www.gumlet.com/blog/jpeg-xl/">Gumlet</a>
+                <a href="https://squoosh.app/">Squoosh</a>
+                <a href="https://cloudinary.com/blog/cloudinary_supports_jpeg_xl">Cloudinary</a>
+                <a href="https://mconverter.eu/">MConverter</a>
+                <a href="https://jpegxl.io/">jpegxl.io</a>
+                <a href="https://stefan-oltmann.de/exif-viewer">EXIF Viewer</a>
               </div>
             </div>
           </div>
           <div class="container-text-shaded centered">
             <div class="wrapper-text gap-2rem">
               <div class="text-regular-semibold color-black">Image Viewers</div>
-              <div class="text-small-regular centered color-black">
-                <a href="https://aspect.bildhuus.com/" class="link-text-body-underline">Aspect<br>‍</a>
-                <a href="https://imageglass.org/" class="link-text-body-underline">ImageGlass<br>‍</a>
-                <a href="https://www.irfanview.com/" class="link-text-body-underline">IrfanView</a> (supported since 4.59 - requires a <a href="https://www.irfanview.com/plugins.htm" class="link-text-body-underline">plugin</a> to be downloaded and enabled)<br>‍<a href="https://github.com/sylikc/jpegview/releases" class="link-text-body-underline">jpegview<br>‍</a>
-                <a href="https://github.com/artemsen/swayimg" class="link-text-body-underline">Swayimg<br>‍</a>
-                <a href="https://mihon.app/" class="link-text-body-underline">Mihon<br>‍</a>
-                <a href="https://www.xnview.com/en/" class="link-text-body-underline">XnView<br>‍</a>Any viewer based on Qt, KDE, GDK-pixbuf, EFL, ImageMagick, libvips or imlib2 (see above)Qt viewers: gwenview, digiKam, KolourPaint, KPhotoAlbum, LXImage-Qt, qimgv, qView, nomacs, VookiImageViewer, PhotoQtGTK viewers: Eye of Gnome (eog), gThumb, GeeqieEFL viewers: entice, ephoto
+              <div class="text-small-regular centered color-black list">
+                <a href="https://aspect.bildhuus.com/">Aspect</a>
+                <a href="https://imageglass.org/">ImageGlass</a>
+                <span>
+                  <a href="https://www.irfanview.com/">IrfanView</a>(supported since 4.59 - requires a
+                  <a href="https://www.irfanview.com/plugins.htm">
+                    plugin
+                  </a>
+                  to be downloaded and enabled)
+                </span>
+                <a href="https://github.com/sylikc/jpegview/releases">jpegview</a>
+                <a href="https://github.com/artemsen/swayimg">Swayimg</a>
+                <a href="https://mihon.app/">Mihon</a>
+                <a href="https://www.xnview.com/en/">XnView‍</a>
+                <span>
+                  Any viewer based on Qt, KDE, GDK-pixbuf, EFL, ImageMagick, libvips or imlib2 (see above)Qt viewers: gwenview, digiKam, KolourPaint, KPhotoAlbum, LXImage-Qt, qimgv, qView, nomacs, VookiImageViewer, PhotoQtGTK viewers: Eye of Gnome (eog), gThumb, GeeqieEFL viewers: entice, ephoto
+                </span>
               </div>
             </div>
           </div>
           <div class="container-text-shaded centered">
             <div class="wrapper-text gap-2rem">
               <div class="text-regular-semibold color-black">Duplicate Image Finders</div>
-              <div class="text-small-regular">
-                <a href="#" class="link-text-body-underline">AntiDupl.NET</a>
+              <div class="text-small-regular list">
+                <a href="#">AntiDupl.NET</a>
               </div>
             </div>
           </div>

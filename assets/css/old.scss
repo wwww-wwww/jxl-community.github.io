@@ -2482,25 +2482,6 @@ blockquote {
   display: flex;
 }
 
-.container-wave-animated {
-  z-index: 0;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  flex-flow: column;
-  flex: 0 auto;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  justify-content: flex-start;
-  align-self: center;
-  align-items: center;
-  width: 100%;
-  min-width: auto;
-  height: 12rem;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-}
 
 .definition {
   color: var(--text--color--text-white);
@@ -2546,16 +2527,6 @@ blockquote {
   display: flex;
 }
 
-.image-logo-software {
-  object-fit: cover;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  max-width: none;
-  height: 100%;
-  text-decoration: none;
-  display: flex;
-}
 
 .text-regular-semibold {
   letter-spacing: -0.015em;
@@ -3039,13 +3010,6 @@ blockquote {
   padding: 0 4rem;
   text-decoration: none;
   display: flex;
-}
-
-.wrapper-logo-software-link {
-  width: auto;
-  max-width: none;
-  height: 5rem;
-  max-height: none;
 }
 
 .wrapper-logo-software-link.horizontal {
@@ -4485,21 +4449,6 @@ blockquote {
     justify-content: flex-start;
   }
 
-  .container-wave-animated {
-    grid-column-gap: 80px;
-    grid-row-gap: 80px;
-    justify-content: flex-start;
-    align-self: center;
-    align-items: center;
-    width: 100%;
-    min-width: 100%;
-    height: 14rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: flex;
-    position: static;
-  }
-
   .image-logo-software.large {
     height: 8rem;
   }
@@ -5379,14 +5328,6 @@ blockquote {
     max-width: 600px;
   }
 
-  .container-wave-animated {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    width: 100%;
-    min-width: auto;
-    height: 8rem;
-  }
-
   .group-container {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
@@ -6156,12 +6097,6 @@ blockquote {
     max-width: 480px;
   }
 
-  .container-wave-animated {
-    width: 100%;
-    min-width: 568px;
-    height: 7rem;
-  }
-
   .section-creative_workflow {
     padding-top: 0;
     padding-bottom: 0;
@@ -6786,12 +6721,6 @@ blockquote {
 
   .wrapper-text.centered.width-rem {
     max-width: 15em;
-  }
-
-  .container-wave-animated {
-    width: 100%;
-    min-width: auto;
-    height: 4rem;
   }
 
   .group-container {

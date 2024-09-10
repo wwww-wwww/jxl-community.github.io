@@ -42,6 +42,8 @@ import "phoenix_html"
 // >> liveSocket.disableLatencySim()
 // window.liveSocket = liveSocket
 
+import "./JPEGvsJXL"
+import "./script"
 
 let last_scrolly = window.scrollY
 document.addEventListener("scroll", _e => {

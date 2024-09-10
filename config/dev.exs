@@ -52,7 +52,7 @@ config :jpegxl, JpegxlWeb.Endpoint,
     patterns: [
       ~r"priv/static/(?!uploads/).*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"lib/jpegxl_web/controllers/.*(ex|heex)$",
-      ~r"lib/templates/.*(eex)$"
+      ~r"lib/templates/.*(ex|eex)$"
     ]
   ]
 
