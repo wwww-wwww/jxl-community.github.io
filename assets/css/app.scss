@@ -1,6 +1,8 @@
 @import "variables.scss";
 @import "old.scss";
 @import "header.scss";
+@import "footer.scss";
+@import "hero.scss";
 
 .material-icons {
   font-family: "Material Icons";
@@ -46,47 +48,4 @@ main {
 
 label.material-icons {
   margin-bottom: 0;
-}
-
-.section-jpeg-xl-hero {
-  z-index: 1;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: center;
-  display: flex;
-  position: relative;
-}
-
-.section-jpeg-xl-hero:first-child {
-  padding-top: 14rem;
-}
-
-@media screen and (max-width: 991px) {
-  .section-jpeg-xl-hero:first-child {
-    padding-top: 11rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .section-jpeg-xl-hero:first-child {
-    padding-top: 7rem;
-  }
-}
-
-.section-jpeg-xl-hero.gradient-bottom {
-  background-image: linear-gradient(
-      180deg,
-      #18191b00 55%,
-      var(--page-black) 95%
-    ),
-    image-set(
-      url("/images/kamran-abdullayev-black-background-unsplash.jxl")
-        type("image/jxl"),
-      url("/images/kamran-abdullayev-black-background-unsplash.webp")
-        type("image/webp")
-    );
-  background-position: 0 0, 50% 0;
-  background-size: auto, cover;
-  overflow: hidden;
 }

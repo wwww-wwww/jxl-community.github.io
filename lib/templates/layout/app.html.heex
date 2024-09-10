@@ -50,10 +50,10 @@
             <.link href={~p"/newsroom"}>Newsroom</.link>
             <span class="navbar-social-links">
               <.link href="https://discord.gg/DqkQgDRTFu" target="_blank">
-                <img src="/images/Icon-social-discord-black.svg" loading="lazy" alt="discord" />
+                <img src="/images/Icon-social-discord-black.svg" loading="lazy" alt="Discord" />
               </.link>
               <.link href="https://www.reddit.com/r/jpegxl" target="_blank">
-                <img src="/images/Icon-social-reddit-black.svg" loading="lazy" alt="reddit" />
+                <img src="/images/Icon-social-reddit-black.svg" loading="lazy" alt="Reddit" />
               </.link>
               <.link href="https://x.com/jpegxl" target="_blank">
                 <img src="/images/Icon-social-x-twitter-black.svg" loading="lazy" alt="X" />
@@ -68,3 +68,49 @@
 <main>
   <%= @inner_content %>
 </main>
+<footer>
+  <.link href={~p"/"}>
+    <img
+      width="63"
+      loading="lazy"
+      alt="JPEG XL Logo"
+      src={~p"/images/Logo-JPEG_XL-vertical-square-full_color.svg"}
+      class="footer-logo"
+    />
+  </.link>
+  <div class="footer-social-links">
+    <.link href="https://discord.gg/DqkQgDRTFu" target="_blank">
+      <img src="/images/Icon-social-discord-black.svg" loading="lazy" alt="Discord" />
+    </.link>
+    <.link href="https://www.reddit.com/r/jpegxl" target="_blank">
+      <img src="/images/Icon-social-reddit-black.svg" loading="lazy" alt="Reddit" />
+    </.link>
+    <.link href="https://x.com/jpegxl" target="_blank">
+      <img src="/images/Icon-social-x-twitter-black.svg" loading="lazy" alt="X" />
+    </.link>
+  </div>
+  <div class="footer-text">
+    <span>©2024 JPEG XL and the JPEG XL Community.</span>
+    <br />
+    <span>
+      Want to contribute to this website?
+      <a href="https://github.com/jxl-community/jxl-community.github.io">
+        Make a pull request!
+      </a>
+    </span>
+    <br />
+    <span>
+      Site created by <a href="https://fractionalxperience.com">Fractional Xperience</a>.
+    </span>
+    <br />
+    <span><a href="old/" class="footer_legal-link">Access to archived website.</a></span>
+    <br />
+    <a href="https://hits.sh/jpegxl.info/">
+      <img
+        alt="Hits"
+        src="https://hits.sh/jpegxl.info.svg?style=plastic&color=3bb6b3"
+        style="width: 3.5em; display: inline; margin-top: 1em;"
+      />
+    </a>
+  </div>
+</footer>
