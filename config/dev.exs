@@ -51,7 +51,8 @@ config :jpegxl, JpegxlWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/(?!uploads/).*(js|css|png|jpeg|jpg|gif|svg)$",
-      ~r"lib/jpegxl_web/(controllers|live|components)/.*(ex|heex)$"
+      ~r"lib/jpegxl_web/controllers/.*(ex|heex)$",
+      ~r"lib/templates/.*(eex)$"
     ]
   ]
 
