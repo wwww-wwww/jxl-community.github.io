@@ -10,12 +10,8 @@
             src={~p"/images/Logo-JPEG_XL-horizontal-square-full_color.svg"}
           />
         </.link>
-        <div class="navbar_menu-items">
-          <label
-            for="navbar-dropdown"
-            class="navbar-toggle navbar_link navbar-top w-inline-block material-icons button"
-          >
-          </label>
+        <div class="navbar-top-items">
+          <label for="navbar-dropdown" class="navbar-toggle material-icons button"></label>
           <!--
           <div class="navbar-divider-vertical"></div>
           <a href="#" class="navbar_link navbar-top w-inline-block"></a>
@@ -38,56 +34,31 @@
           </div>
           <div>
             <div>Tools</div>
-            <a href="/resources/distance-vs-effort-visualizer.html">
+            <.link href={~p"/distance-vs-effort-visualizer"}>
               Distance vs. Effort Visualizer
-            </a>
-            <a href="/resources/jpeg-xl-test-page.html">JPEG XL Test Page</a>
+            </.link>
+            <.link href={~p"/test-page"}>JPEG XL Test Page</.link>
           </div>
           <div>
             <div>About</div>
-            <a href="/about/history.html">History</a>
-            <a href="/about/contributors.html">Contributors</a>
-            <a href="/about/photo-credits.html">Photo Credits</a>
+            <.link href={~p"/history"}>History</.link>
+            <.link href={~p"/contributors"}>Contributors</.link>
+            <.link href={~p"/photo-credits"}>Photo Credits</.link>
           </div>
           <div>
             <div>Media</div>
-            <a href="/media/newsroom.html">Newsroom</a>
-            <div>
-              <div class="w-layout-grid navbar-social-links">
-                <a
-                  href="https://discord.gg/DqkQgDRTFu"
-                  target="_blank"
-                  class="social-link w-inline-block"
-                >
-                  <img
-                    src="/images/Icon-social-discord-black.svg"
-                    loading="lazy"
-                    alt=""
-                    class="icon-social"
-                  />
-                </a>
-                <a
-                  href="https://www.reddit.com/r/jpegxl"
-                  target="_blank"
-                  class="social-link w-inline-block"
-                >
-                  <img
-                    src="/images/Icon-social-reddit-black.svg"
-                    loading="lazy"
-                    alt=""
-                    class="icon-social"
-                  />
-                </a>
-                <a href="https://x.com/jpegxl" target="_blank" class="social-link w-inline-block">
-                  <img
-                    src="/images/Icon-social-x-twitter-black.svg"
-                    loading="lazy"
-                    alt=""
-                    class="icon-social"
-                  />
-                </a>
-              </div>
-            </div>
+            <.link href={~p"/newsroom"}>Newsroom</.link>
+            <span class="navbar-social-links">
+              <.link href="https://discord.gg/DqkQgDRTFu" target="_blank">
+                <img src="/images/Icon-social-discord-black.svg" loading="lazy" alt="discord" />
+              </.link>
+              <.link href="https://www.reddit.com/r/jpegxl" target="_blank">
+                <img src="/images/Icon-social-reddit-black.svg" loading="lazy" alt="reddit" />
+              </.link>
+              <.link href="https://x.com/jpegxl" target="_blank">
+                <img src="/images/Icon-social-x-twitter-black.svg" loading="lazy" alt="X" />
+              </.link>
+            </span>
           </div>
         </div>
       </div>

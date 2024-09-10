@@ -42,3 +42,16 @@ import "phoenix_html"
 // >> liveSocket.disableLatencySim()
 // window.liveSocket = liveSocket
 
+
+let last_scrolly = window.scrollY
+document.addEventListener("scroll", _e => {
+  if (window.scrollY > 100 && window.scrollY > last_scrolly) {
+    document.getElementsByTagName("nav")[0].classList.toggle("hidden", true)
+    document.getElementsByTagName("nav")[0].classList.toggle("visible", false)
+    document.getElementById("navbar-dropdown").checked = false
+  } else if (window.scrollY < last_scrolly) {
+    document.getElementsByTagName("nav")[0].classList.toggle("hidden", false)
+    document.getElementsByTagName("nav")[0].classList.toggle("visible", true)
+  }
+  last_scrolly = window.scrollY
+})

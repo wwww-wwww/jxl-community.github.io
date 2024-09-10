@@ -33,6 +33,11 @@ body {
 
 main {
   padding-top: 7rem;
+
+  > *:first-child {
+    margin-top: -7rem;
+    padding-top: 7rem;
+  }
 }
 
 .button {
@@ -52,6 +57,21 @@ label.material-icons {
   align-items: center;
   display: flex;
   position: relative;
+}
+
+.section-jpeg-xl-hero:first-child {
+  padding-top: 14rem;
+}
+
+@media screen and (max-width: 991px) {
+  .section-jpeg-xl-hero:first-child {
+    padding-top: 11rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-jpeg-xl-hero:first-child {
+    padding-top: 7rem;
+  }
 }
 
 .section-jpeg-xl-hero.gradient-bottom {

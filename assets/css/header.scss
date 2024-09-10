@@ -33,49 +33,52 @@ header {
     backdrop-filter: blur(15px);
     background-color: #18191b73;
 
+    label {
+      background: none;
+    }
+
     > div {
       justify-content: space-between;
       align-items: center;
       width: 100%;
       max-width: 1200px;
       display: flex;
-      padding: 0 4rem;
+      padding: 0 3rem;
     }
 
     a {
       height: 100%;
-      padding: 1em;
+      padding: 1em 0;
+
       img {
         height: 100%;
         width: auto;
       }
     }
+
+    .navbar-top-items {
+      display: flex;
+    }
   }
 
   @media screen and (min-width: 1440px) {
-    .navbar-top {
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
   @media screen and (max-width: 991px) {
     .navbar-top {
       height: 6rem;
-      padding-left: 2rem;
-      padding-right: 1.5rem;
+
+      > div {
+        padding: 0 2rem;
+      }
     }
   }
   @media screen and (max-width: 767px) {
     .navbar-top {
       height: 5rem;
-      padding-right: 1.5rem;
-    }
-  }
-  @media screen and (max-width: 479px) {
-    .navbar-top {
-      height: 5rem;
-      padding-left: 1.5rem;
-      padding-right: 1rem;
+
+      > div {
+        padding: 0 1.5rem;
+      }
     }
   }
 
@@ -91,6 +94,8 @@ header {
     justify-content: center;
     width: 100%;
     z-index: -1;
+    max-height: calc(100vh - 5rem);
+    overflow-y: auto;
 
     > div {
       position: relative;
@@ -142,6 +147,15 @@ header {
         > a:hover {
           color: var(--base--white);
           font-weight: 500;
+        }
+      }
+
+      .navbar-social-links {
+        height: 1.75rem;
+
+        a,
+        img {
+          height: 100%;
         }
       }
     }
