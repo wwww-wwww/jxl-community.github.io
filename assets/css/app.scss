@@ -135,7 +135,7 @@ label.material-icons {
     }
   }
 
-  .number-timeline::after {
+  .number-timeline.line::after {
     content: "";
     position: relative;
     border-style: none none none solid;
